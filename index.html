@@ -3,47 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Kruták Vízszerelés - Megbízható vízszerelési szolgáltatások Nyíregyháza, Örökösföldön. Duguláselhárítás, csőszerelés, csaptelep szerelés és vízóra szerelés.">
-    <meta name="keywords" content="vízszerelő, duguláselhárítás Nyíregyháza, Örökösföld, csőszerelés, csaptelep szerelés, Kruták vízszerelés">
-    <meta name="author" content="Kruták János">
+    <meta name="description" content="GSA Vízszerelés - Megbízható vízszerelési szolgáltatások Nyíregyházán, Örökösföldön. Duguláselhárítás, csőszerelés, fűtésszerelés és WC szerelés.">
+    <meta name="keywords" content="vízszerelő Nyíregyháza, vízszerelő Örökösföld, duguláselhárítás, csőszerelés, fűtésszerelés, WC szerelés, GSA vízszerelés">
+    <meta name="author" content="GSA Vízszerelés">
     <meta name="robots" content="index, follow">
     
     <!-- Open Graph tags -->
-    <meta property="og:title" content="Kruták Vízszerelés - Vízszerelő Nyíregyháza, Örökösföld">
-    <meta property="og:description" content="Megbízható vízszerelési szolgáltatások Nyíregyháza, Örökösföldön. Duguláselhárítás, csőszerelés, csaptelep szerelés.">
-    <meta property="og:image" content="https://vizszerelo.krutak.hu/images/logo.jpg">
-    <meta property="og:url" content="https://vizszerelo.krutak.hu">
+    <meta property="og:title" content="GSA Vízszerelés - Vízszerelő Nyíregyháza, Örökösföld">
+    <meta property="og:description" content="Megbízható vízszerelési szolgáltatások Nyíregyházán, Örökösföldön. Duguláselhárítás, csőszerelés, fűtésszerelés.">
+    <meta property="og:image" content="https://vizfutes-gsa.hu/images/logo.svg">
+    <meta property="og:url" content="https://vizfutes-gsa.hu">
     
-    <title>Vízszerelő  | Kruták Vízszerelés | Duguláselhárítás</title>
+    <title>GSA Vízszerelés | Vízszerelő Nyíregyháza, Örökösföld | Duguláselhárítás</title>
 
     <!-- Structured data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "Kruták Vízszerelés",
-      "image": "https://vizszerelo.krutak.hu/images/logo.jpg",
-      "description": "Megbízható vízszerelési szolgáltatások Nyíregyháza, Örökösföldön.",
+      "name": "GSA Vízszerelés",
+      "image": "https://vizfutes-gsa.hu/images/logo.jpg",
+      "description": "Megbízható vízszerelési szolgáltatások Nyíregyházán, Örökösföldön.",
       "address": {
         "@type": "PostalAddress",
         "addressLocality": "Nyíregyháza",
+        "addressRegion": "Örökösföld",
         "addressCountry": "HU"
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": "47.936794",
-        "longitude": "21.751422"
-      },
-      "url": "https://vizszerelo.krutak.hu",
-      "telephone": "+36709318485",
-      "priceRange": "$"
+      "url": "https://vizfutes-gsa.hu",
+      "telephone": "+36201234567",
+      "priceRange": "$$"
     }
     </script>
     
     <style>
         :root {
-            --primary-color: #007bff;
-            --secondary-color: #f8f9fa;
+            --primary-blue: #2b4c7e;
+            --secondary-blue: #1e365c;
+            --accent-blue: #567ebd;
+            --text-light: #ffffff;
+            --text-dark: #333333;
+            --background-light: #f8f9fa;
         }
         
         * {
@@ -55,60 +55,166 @@
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
+            color: var(--text-dark);
         }
 
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 1rem;
+        /* Fejléc stílusok */
+        .header-container {
+            position: relative;
+            overflow: hidden;
+            padding: 3.5rem 1rem;
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .header-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at top right, 
+                                      rgba(86, 126, 189, 0.4) 0%, 
+                                      transparent 50%);
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
             text-align: center;
+            color: var(--text-light);
+            position: relative;
+            z-index: 1;
+            animation: fadeIn 1s ease-out;
         }
 
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .header-content h1 {
+            font-size: 3.2rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .header-subtitle {
+            font-size: 1.4rem;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 2rem;
+            font-weight: 300;
+        }
+
+        .contact-button {
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            font-size: 1.1rem;
+            color: var(--text-light);
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-button:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Navigáció */
         nav {
-            background-color: #0056b3;
-            padding: 1rem;
+            background-color: white;
+            padding: 1.2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
         nav ul {
             list-style: none;
             display: flex;
             justify-content: center;
-            gap: 2rem;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        section {
-            padding: 2rem;
+            gap: 3rem;
             max-width: 1200px;
             margin: 0 auto;
         }
 
+        nav a {
+            color: var(--primary-blue);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 0;
+            height: 2px;
+            background: var(--accent-blue);
+            transition: all 0.3s ease;
+            transform: translateX(-50%);
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        /* Tartalmi elemek */
+        section {
+            padding: 4rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            color: var(--primary-blue);
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
         .services {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 2rem;
             margin-top: 2rem;
         }
 
         .service-card {
-            background-color: var(--secondary-color);
-            padding: 1.5rem;
+            background-color: var(--background-light);
+            padding: 2rem;
             border-radius: 8px;
             text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        .service-card h3 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
         }
 
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 1rem;
+            gap: 2rem;
             margin-top: 2rem;
         }
 
@@ -118,46 +224,190 @@
 
         .gallery img {
             width: 100%;
-            height: 200px;
+            height: 250px;
             object-fit: cover;
             border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.03);
         }
 
         .gallery figcaption {
-            margin-top: 0.5rem;
+            margin-top: 1rem;
             text-align: center;
-            color: #666;
+            color: var(--text-dark);
         }
 
         .contact-info {
-            background-color: var(--secondary-color);
+            background-color: var(--background-light);
             padding: 2rem;
             border-radius: 8px;
-            margin-top: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .contact-info h3 {
+            color: var(--primary-blue);
+            margin-bottom: 1rem;
         }
 
         footer {
-            background-color: var(--primary-color);
-            color: white;
+            background-color: var(--primary-blue);
+            color: var(--text-light);
             text-align: center;
-            padding: 1rem;
-            margin-top: 2rem;
+            padding: 2rem 1rem;
+            margin-top: 4rem;
         }
 
         @media (max-width: 768px) {
+            .header-content h1 {
+                font-size: 2.2rem;
+            }
+
+            .header-subtitle {
+                font-size: 1.1rem;
+            }
+
             nav ul {
                 flex-direction: column;
                 align-items: center;
                 gap: 1rem;
             }
+
+            section {
+                padding: 2rem 1rem;
+            }
         }
+
+        .logo {
+            max-width: 300px;
+            width: 100%;
+            margin: 0 auto 1rem auto; /* Középre igazítás */
+            display: block;
+        }
+
+        .logo svg {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                max-width: 200px;
+            }
+        }
+
+        .header-contact {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap; /* Mobil nézetre törés */
+        }
+
+        .contact-button {
+            display: inline-flex;
+            align-items: center;
+            padding: 0.8rem 2rem;
+            font-size: 1.1rem;
+            color: var(--text-light);
+            text-decoration: none;
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50px;
+            transition: all 0.3s ease;
+        }
+
+        .contact-button:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        @media (max-width: 768px) {
+            .header-contact {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-button {
+                width: 100%;
+                justify-content: center;
+            }
+        }
+
     </style>
 </head>
 <body>
-    <header>
-        <h1>Kruták Vízszerelés</h1>
-        <p>Megbízható vízszerelési szolgáltatások Nyíregyháza, Örökösföldön</p>
-    </header>
+
+<!-- A header-content div módosítása: -->
+<header class="header-container">
+    <div class="header-content">
+        <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150" style="background: none;">
+                <defs>
+                    <linearGradient id="marbleS" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#50C878"/>
+                        <stop offset="25%" style="stop-color:#3CB371"/>
+                        <stop offset="50%" style="stop-color:#50C878"/>
+                        <stop offset="75%" style="stop-color:#40B26D"/>
+                        <stop offset="100%" style="stop-color:#50C878"/>
+                    </linearGradient>
+
+                    <filter id="noise" x="0%" y="0%" width="100%" height="100%">
+                        <feTurbulence type="fractalNoise" baseFrequency="0.7" numOctaves="3" seed="1"/>
+                        <feDisplacementMap in="SourceGraphic" scale="3"/>
+                    </filter>
+
+                    <linearGradient id="marbleGA" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#046307"/>
+                        <stop offset="25%" style="stop-color:#115E3F"/>
+                        <stop offset="50%" style="stop-color:#046307"/>
+                        <stop offset="75%" style="stop-color:#004D40"/>
+                        <stop offset="100%" style="stop-color:#046307"/>
+                    </linearGradient>
+                </defs>
+
+                <text x="160" y="110"
+                      font-size="150"
+                      font-family="Arial Black"
+                      text-anchor="middle"
+                      fill="url(#marbleS)"
+                      filter="url(#noise)">S</text>
+
+                <text x="80" y="100"
+                      font-size="100"
+                      font-family="Arial Black"
+                      fill="url(#marbleGA)"
+                      filter="url(#noise)">G</text>
+
+                <text x="160" y="100"
+                      font-size="100"
+                      font-family="Arial Black"
+                      fill="url(#marbleGA)"
+                      filter="url(#noise)">A</text>
+
+                <!-- Finom fényes hatás -->
+                <path d="M0,0 L300,150"
+                      stroke="rgba(255,255,255,0.1)"
+                      stroke-width="40"
+                      filter="blur(20px)"/>
+            </svg>
+        </div>
+        <h1>GSA Vízszerelés</h1>
+        <p class="header-subtitle">Vízszerelési szolgáltatások Nyíregyházán, Örökösföldön</p>
+        <div class="header-contact">
+            <a href="tel:+36709318485" class="contact-button">
+                📞 +36 70 931 8485
+            </a>
+            <a href="tel:+3630373511" class="contact-button">
+                📞 +36 30 373 511
+            </a>
+        </div>
+    </div>
+</header>
 
     <nav aria-label="Fő navigáció">
         <ul>
@@ -173,7 +423,7 @@
             <div class="services">
                 <div class="service-card">
                     <h3>Duguláselhárítás</h3>
-                    <p>Gyors és hatékony duguláselhárítás modern eszközökkel</p>
+                    <p>Lakáson belüli duguláselhárítás szakszerűen</p>
                 </div>
                 <div class="service-card">
                     <h3>Csőszerelés</h3>
@@ -183,6 +433,18 @@
                     <h3>Csaptelep szerelés</h3>
                     <p>Csaptelepek javítása, cseréje, felszerelése</p>
                 </div>
+                <div class="service-card">
+                    <h3>WC szerelés</h3>
+                    <p>WC csésze csere, tartály csere és tartály felújítás</p>
+                </div>
+                <div class="service-card">
+                    <h3>Fűtésszerelés</h3>
+                    <p>Fűtési hibák feltárása és megszüntetése, radiátorok cseréje</p>
+                </div>
+                <div class="service-card">
+                    <h3>Vizes javítás</h3>
+                    <p>Vízzel kapcsolatos hibák feltárása, javítása</p>
+                </div>
             </div>
         </section>
 
@@ -190,12 +452,40 @@
             <h2>Referencia munkáink</h2>
             <div class="gallery">
                 <figure>
-                    <img src="/api/placeholder/400/300" alt="Fürdőszoba felújítás és csaptelep csere" loading="lazy">
-                    <figcaption>Fürdőszoba felújítás</figcaption>
+                    <img src="/images/2_konyha.jpg" alt="Konyhai vezetékezés" loading="lazy">
+                    <figcaption>Konyhai vezeték szerelés</figcaption>
                 </figure>
                 <figure>
-                    <img src="/api/placeholder/400/300" alt="Mosogató és csaptelep csere" loading="lazy">
-                    <figcaption>Konyhai szerelés</figcaption>
+                    <img src="/images/3_padlo.jpg" alt="F" loading="lazy">
+                    <figcaption>Radiátorokhoz szükséges csövezés aljzatban</figcaption>
+                </figure>
+                <figure>
+                    <img src="/images/3_radiator.jpg" alt="F" loading="lazy">
+                    <figcaption>Radiátor illesztése</figcaption>
+                </figure>
+                <figure>
+                    <img src="/images/4_wc.jpg" alt="F" loading="lazy">
+                    <figcaption>Vízvezeték szerelés a szerelő csatornában</figcaption>
+                </figure>
+                <figure>
+                    <img src="/images/5_mosogep.jpg" alt="F" loading="lazy">
+                    <figcaption>Mosógép leállás betonba vésve</figcaption>
+                </figure>
+                <figure>
+                    <img src="/images/6_zuhany_beallas.jpg" alt="F" loading="lazy">
+                    <figcaption>Épített zuhany folyóka csövezés beállítás</figcaption>
+                </figure>
+                <figure>
+                    <img src="/images/7_vizoracsap.jpg" alt="F" loading="lazy">
+                    <figcaption>Vízóra golyóscsap csere előtt (jobbra) és után (balra)</figcaption>
+                </figure>
+                <figure>
+                    <img src="/images/8_faliwc.jpg" alt="F" loading="lazy">
+                    <figcaption>Fali WC keret beállítás</figcaption>
+                </figure>
+                <figure>
+                    <img src="/images/1_mosogato.jpg" alt="Mosogató lefojó" loading="lazy">
+                    <figcaption>Mosogató lefojó</figcaption>
                 </figure>
             </div>
         </section>
@@ -203,18 +493,18 @@
         <section id="kapcsolat">
             <h2>Kapcsolat</h2>
             <div class="contact-info">
-                <h3>Kruták András</h3>
+                <h3>GSA Vízszerelés</h3>
                 <address>
-                    <p>Telefon: <a href="tel:+36709318485">+36 70 931 8485</a></p>
-                    <p>Email: <a href="mailto:krutak.la@gmail.hu">krutak.la@gmail.hu</a></p>
-                    <p>Szolgáltatási terület: Nyíregyháza, Örökösföldön</p>
+                    <p>Telefon: <a href="tel:+36709318485">+36 70 931 8485</a>, <a href="tel:+3630373511">+36 30 373 511</a></p>
+                    <p>Email: <a href="mailto:vizfutes.gsa@gmail.com">vizfutes.gsa@gmail.com</a></p>
+                    <p>Szolgáltatási terület: Nyíregyháza, Örökösföld</p>
                 </address>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Kruták Vízszerelés. Minden jog fenntartva.</p>
+        <p>&copy; 2024 GSA Vízszerelés. Minden jog fenntartva.</p>
     </footer>
 
     <script>
