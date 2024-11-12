@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+Allow: /images/
+Allow: /css/
+Allow: /js/
+
+# Prevent crawling of sensitive or administrative areas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+
+# Since these are single-page sites, we don't need sitemap or crawl-delay
+# Simple setup for better crawling efficiency
